@@ -1,0 +1,7 @@
+This script is to be executed as a macro as follows:
+- replace "my own pvp" and "my own" with your "pvp" and "pve" plater profiles
+- when you begin your arena session, hit the macro once you are inside arena. First condition will be met and the plater
+	profile will be changed to "pvp"
+- once you are done, hit the macro outside of arena to switch back to pve profile.
+
+/run if IsActiveBattlefieldArena() then Plater.db:SetProfile("my own pvp") else Plater.db:SetProfile("my own") end ReloadUI()
